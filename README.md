@@ -6,13 +6,13 @@ Two lines, styled after a typical bash `PS1`:
 
 ```
 jimmy@machine:/home/jimmy/works/data_extractor
-Opus · high · ctx 60% left
+Opus · high · context 60% left
 ```
 
 - **`user@host:cwd`** — bold green / bold blue, like your shell prompt.
 - **model** — from the status line payload (e.g. `Opus`, `Sonnet`).
 - **effort** — read from `effortLevel` in your Claude settings (omitted if unset).
-- **`ctx NN% left`** — context window *remaining*, estimated from the latest
+- **`context NN% left`** — context window *remaining*, estimated from the latest
   turn's input-side tokens (`input + cache_read + cache_creation`) against a
   200k window. Output tokens are excluded.
 

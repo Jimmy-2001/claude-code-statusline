@@ -38,7 +38,7 @@ fi
 # ---- assemble line 2 (dim) ----------------------------------------------
 parts="$model"
 [ -n "$effort" ] && parts="$parts · $effort"
-[ -n "$ctx" ]    && parts="$parts · ctx ${ctx}% left"
+[ -n "$ctx" ]    && parts="$parts · context ${ctx}% left"
 
 # ---- emit ----------------------------------------------------------------
 printf '\033[01;32m%s@%s\033[00m:\033[01;34m%s\033[00m\n' \
